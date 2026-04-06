@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="90" x2="760" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18181b"/>
+      <stop offset="1" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="120" y1="180" x2="760" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff4f8d" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#fbcfe8" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <rect x="54" y="54" width="792" height="1092" rx="40" stroke="#f9a8d4" stroke-opacity="0.32" stroke-width="4"/>
+  <rect x="110" y="160" width="680" height="800" rx="30" fill="url(#glow)"/>
+  <text x="450" y="1030" text-anchor="middle" fill="#fce7f3" font-size="54" font-family="Arial, sans-serif">Imagen temporal</text>
+</svg>

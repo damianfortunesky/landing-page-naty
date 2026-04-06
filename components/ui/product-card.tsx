@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Product } from "@/data/products";
+import { FALLBACK_PRODUCT_IMAGE, resolveImageAsset } from "@/data/assets";
 
 interface ProductCardProps {
   product: Product;
@@ -13,7 +14,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
     >
       <div className="relative aspect-[4/5] overflow-hidden">
         <Image
-          src={product.image}
+          src={resolveImageAsset(product.image, FALLBACK_PRODUCT_IMAGE)}
           alt={product.name}
           fill
           className="object-cover object-center transition duration-700 ease-premium group-hover:scale-[1.04] group-hover:brightness-110"

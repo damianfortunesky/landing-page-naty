@@ -11,9 +11,13 @@ export function CatalogSection() {
           title="Catálogo de productos"
           subtitle="Un grid responsive con enfoque visual premium para destacar cada producto de la colección."
         />
-        <div className="grid gap-5 sm:grid-cols-2 md:gap-7 lg:grid-cols-3">
+        <div className="grid auto-rows-fr gap-5 sm:grid-cols-2 md:gap-7 lg:grid-cols-3">
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              className={product.featured ? "sm:col-span-2 lg:col-span-1 lg:first:col-span-2" : undefined}
+            />
           ))}
         </div>
       </div>
