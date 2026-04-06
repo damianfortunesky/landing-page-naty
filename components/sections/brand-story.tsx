@@ -3,7 +3,7 @@ import { SectionTitle } from "@/components/ui/section-title";
 export function BrandStorySection() {
   return (
     <section id="inicio" className="layout-wrap section-space">
-      <div className="surface-card relative overflow-hidden p-8 md:p-12">
+      <div className="surface-card relative overflow-hidden p-7 md:p-12">
         <div className="pointer-events-none absolute -left-16 top-8 h-40 w-40 rounded-full bg-rose-500/10 blur-3xl" />
         <SectionTitle
           eyebrow="Nuestra esencia"

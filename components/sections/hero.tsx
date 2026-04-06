@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="layout-wrap pb-18 pt-10 md:pb-20 md:pt-16">
-      <div className="grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr]">
+    <section className="layout-wrap pb-16 pt-8 md:pb-20 md:pt-16">
+      <div className="grid items-center gap-8 md:grid-cols-[1.05fr_0.95fr] md:gap-10">
         <div className="hero-panel text-left">
           <p className="badge-premium mb-6">Nueva temporada · 2026</p>
           <h1 className="font-display text-4xl leading-tight md:text-6xl">
             Elegancia contemporánea
             <span className="block text-rose-200">para una marca inolvidable</span>
           </h1>
-          <p className="mt-6 max-w-xl text-sm text-text-secondary md:text-lg">
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-text-secondary md:text-lg">
             Una landing inmersiva para presentar identidad, colección y catálogo premium en una sola experiencia fluida.
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center gap-3 md:mt-10 md:gap-4">
             <a href="#catalogo" className="btn-primary">
               Ver catálogo
             </a>
@@ -23,7 +23,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3 md:gap-4">
           <article className="surface-card premium-hover relative col-span-2 h-64 overflow-hidden md:h-72">
             <Image src="/products/dress-velvet.svg" alt="Look editorial velvet" fill className="object-cover" />
           </article>
