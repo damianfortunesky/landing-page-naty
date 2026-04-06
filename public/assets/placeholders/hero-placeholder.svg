@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1500" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f0f14"/>
+      <stop offset="1" stop-color="#09090b"/>
+    </linearGradient>
+    <radialGradient id="accent" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(830 430) rotate(33.3) scale(640 390)">
+      <stop stop-color="#ff4f8d" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#ff4f8d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="80" y="70" width="1440" height="860" rx="52" stroke="#f9a8d4" stroke-opacity="0.28" stroke-width="5"/>
+  <rect x="120" y="110" width="1360" height="780" rx="44" fill="url(#accent)"/>
+  <text x="800" y="860" text-anchor="middle" fill="#fce7f3" font-size="58" font-family="Arial, sans-serif">Visual temporal · Hero</text>
+</svg>

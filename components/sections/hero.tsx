@@ -1,4 +1,26 @@
 import Image from "next/image";
+import { FALLBACK_HERO_IMAGE, resolveImageAsset } from "@/data/assets";
+
+const heroVisuals = [
+  {
+    src: "/assets/hero/dress-velvet.svg",
+    alt: "Look editorial velvet",
+    priority: true,
+    className: "col-span-2 h-64 md:h-72"
+  },
+  {
+    src: "/assets/hero/blazer-rose.svg",
+    alt: "Blazer rosa elegante",
+    className: "h-44 md:h-52",
+    priority: false
+  },
+  {
+    src: "/assets/hero/set-eclipse.svg",
+    alt: "Conjunto eclipse premium",
+    className: "h-44 md:h-52",
+    priority: false
+  }
+] as const;
 
 export function HeroSection() {
   return (
@@ -24,15 +46,18 @@ export function HeroSection() {
         </div>
 
         <div className="grid grid-cols-2 gap-3 md:gap-4">
-          <article className="surface-card premium-hover relative col-span-2 h-64 overflow-hidden md:h-72">
-            <Image src="/products/dress-velvet.svg" alt="Look editorial velvet" fill className="object-cover" />
-          </article>
-          <article className="surface-card premium-hover relative h-44 overflow-hidden md:h-52">
-            <Image src="/products/blazer-rose.svg" alt="Blazer rosa elegante" fill className="object-cover" />
-          </article>
-          <article className="surface-card premium-hover relative h-44 overflow-hidden md:h-52">
-            <Image src="/products/set-eclipse.svg" alt="Conjunto eclipse premium" fill className="object-cover" />
-          </article>
+          {heroVisuals.map((visual) => (
+            <article key={visual.alt} className={`surface-card premium-hover relative overflow-hidden ${visual.className}`}>
+              <Image
+                src={resolveImageAsset(visual.src, FALLBACK_HERO_IMAGE)}
+                alt={visual.alt}
+                fill
+                priority={visual.priority}
+                className="object-cover"
+                sizes={visual.priority ? "(max-width: 768px) 100vw, 48vw" : "(max-width: 768px) 50vw, 24vw"}
+              />
+            </article>
+          ))}
         </div>
       </div>
     </section>

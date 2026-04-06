@@ -6,7 +6,7 @@ export function EditorialSection() {
       <div className="surface-card grid overflow-hidden md:grid-cols-[1.15fr_0.85fr]">
         <div className="relative min-h-[380px]">
           <Image
-            src="/products/dress-noir.svg"
+            src="/assets/catalog/dress-noir.svg"
             alt="Campaña editorial de moda"
             fill
             className="object-cover"
