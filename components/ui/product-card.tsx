@@ -16,14 +16,14 @@ export function ProductCard({ product, className }: ProductCardProps) {
           src={product.image}
           alt={product.name}
           fill
-          className="object-cover object-center transition duration-700 ease-premium group-hover:scale-[1.04]"
+          className="object-cover object-center transition duration-700 ease-premium group-hover:scale-[1.04] group-hover:brightness-110"
           sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08080d] via-[#08080d]/15 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08080d] via-[#08080d]/20 to-transparent transition duration-500 group-hover:via-[#08080d]/8" />
       </div>
 
-      <div className="space-y-3 p-5">
-        <p className="text-[11px] uppercase tracking-[0.24em] text-text-muted">{product.category}</p>
+      <div className="space-y-3 p-5 md:p-6">
+        <p className="text-[11px] uppercase tracking-[0.24em] text-text-secondary">{product.category}</p>
         <h3 className="font-display text-2xl leading-tight text-text-primary md:text-[1.65rem]">{product.name}</h3>
         <p className="text-xl font-semibold tracking-[0.02em] text-rose-100">{product.price}</p>
       </div>

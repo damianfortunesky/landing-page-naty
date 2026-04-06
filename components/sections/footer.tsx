@@ -15,13 +15,22 @@ export function Footer() {
         <div>
           <p className="text-xs uppercase tracking-[0.25em] text-text-secondary">Conecta</p>
           <div className="mt-3 flex items-center justify-center gap-4 md:justify-end">
-            <a href="#" className="premium-hover rounded-full border border-surface-stroke px-4 py-2 text-text-secondary">
+            <a
+              href="#"
+              className="premium-hover rounded-full border border-surface-stroke px-4 py-2 text-text-secondary hover:text-rose-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-base"
+            >
               Instagram
             </a>
-            <a href="#" className="premium-hover rounded-full border border-surface-stroke px-4 py-2 text-text-secondary">
+            <a
+              href="#"
+              className="premium-hover rounded-full border border-surface-stroke px-4 py-2 text-text-secondary hover:text-rose-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-base"
+            >
               WhatsApp
             </a>
-            <a href="#" className="premium-hover rounded-full border border-surface-stroke px-4 py-2 text-text-secondary">
+            <a
+              href="#"
+              className="premium-hover rounded-full border border-surface-stroke px-4 py-2 text-text-secondary hover:text-rose-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-base"
+            >
               Email
             </a>
           </div>

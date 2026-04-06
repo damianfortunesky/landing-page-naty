@@ -23,6 +23,10 @@ body {
     radial-gradient(circle at 80% 8%, rgba(220, 134, 170, 0.16), transparent 36%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   @apply border-surface-stroke;
 }
@@ -33,19 +37,19 @@ body {
   }
 
   .section-space {
-    @apply py-18 md:py-22;
+    @apply py-16 md:py-22;
   }
 
   .surface-card {
-    @apply rounded-2xl border border-surface-stroke/90 bg-surface-elevated/95 shadow-card transition duration-300 ease-premium;
+    @apply rounded-2xl border border-surface-stroke/90 bg-surface-elevated/95 shadow-card transition duration-500 ease-premium;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-rose-500 px-8 py-3 text-sm font-semibold text-text-primary shadow-soft transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-rose-400 hover:shadow-glow;
+    @apply inline-flex items-center justify-center rounded-full bg-rose-500 px-8 py-3 text-sm font-semibold text-text-primary shadow-soft transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-rose-400 hover:shadow-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-200/70 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-base active:translate-y-0;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-full border border-surface-stroke bg-surface-soft/50 px-8 py-3 text-sm font-semibold text-text-secondary transition duration-300 ease-premium hover:-translate-y-0.5 hover:border-rose-300/80 hover:text-rose-200;
+    @apply inline-flex items-center justify-center rounded-full border border-surface-stroke bg-surface-soft/50 px-8 py-3 text-sm font-semibold text-text-secondary transition duration-300 ease-premium hover:-translate-y-0.5 hover:border-rose-300/80 hover:text-rose-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-base active:translate-y-0;
   }
 
   .badge-premium {
@@ -59,6 +63,6 @@ body {
 
 @layer utilities {
   .premium-hover {
-    @apply transition duration-300 ease-premium hover:-translate-y-1;
+    @apply transition duration-500 ease-premium hover:-translate-y-1 hover:border-rose-200/35 hover:shadow-glow;
   }
 }
