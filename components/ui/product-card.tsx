@@ -18,8 +18,16 @@ export function ProductCard({ product }: ProductCardProps) {
         />
       </div>
       <div className="space-y-2 p-5">
-        <p className="badge-premium">{product.category}</p>
+        <div className="flex items-center justify-between gap-3">
+          <p className="badge-premium">{product.category}</p>
+          {product.featured ? (
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-200">Destacado</span>
+          ) : null}
+        </div>
         <h3 className="font-display text-2xl text-text-primary">{product.name}</h3>
+        {product.shortDescription ? (
+          <p className="text-sm leading-relaxed text-text-secondary">{product.shortDescription}</p>
+        ) : null}
         <p className="text-xl font-semibold text-rose-100">{product.price}</p>
       </div>
     </article>
