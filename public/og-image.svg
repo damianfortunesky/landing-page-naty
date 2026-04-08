@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Naty Boutique Open Graph">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#130D12" />
+      <stop offset="55%" stop-color="#2A1B26" />
+      <stop offset="100%" stop-color="#4B2D3E" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#EAB9CD" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#EAB9CD" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <text x="96" y="248" fill="#FBEAF2" font-size="94" font-family="Georgia, 'Times New Roman', serif" letter-spacing="14">NATY BOUTIQUE</text>
+  <text x="96" y="336" fill="#EFC9D9" font-size="44" font-family="Arial, sans-serif" letter-spacing="2">Moda femenina premium</text>
+  <text x="96" y="404" fill="#D8B2C4" font-size="34" font-family="Arial, sans-serif">Colección • Catálogo • Editorial</text>
+</svg>
